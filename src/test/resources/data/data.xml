@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Header xmlns:hcfg="http://service.wellsfargo.com/base/acaps/envelope/2004/">
+        <msg:WFContext xmlns:msg="http://service.wellsfargo.com/entity/message/2003/">
+            <msg:messageId>ff1fb639-bea6-477b-bd20-1590e74c57fd</msg:messageId>
+            <msg:sessionId>J2346</msg:sessionId>
+            <msg:sessionSequenceNumber>1234</msg:sessionSequenceNumber>
+            <msg:creationTimestamp>2021-09-09T15:43:17.776-07:00</msg:creationTimestamp>
+            <msg:activitySourceId>TN</msg:activitySourceId>
+            <msg:subActivitySourceId>CISN-RCPQ</msg:subActivitySourceId>
+            <msg:hostName>DTC48CCA3185F49.ent.wfb.bank.corp</msg:hostName>
+            <msg:originatorId>U036054</msg:originatorId>
+            <msg:originatorIdType>TOPSECRET</msg:originatorIdType>
+ </msg:WFContext>
+        <hcfg:acapsContext>
+            <service>OASStatusInformation</service>
+            <action>INQ</action>
+            <applicationId>80416e1f-9832-45a1-b757-6258f3e22205</applicationId>
+        </hcfg:acapsContext>
+    </soap:Header>
+    <soap:Body xmlns:hcfg="http://service.wellsfargo.com/base/acaps/envelope/2004/">
+        <hcfg:OASStatusInformationRequest>
+            <info>
+                <loanNumber>J2346</loanNumber>
+                <originatingSystem>OAS</originatingSystem>
+                <requestorId>U036054</requestorId>
+            </info>
+        </hcfg:OASStatusInformationRequest>
+    </soap:Body>
+</soap:Envelope>
